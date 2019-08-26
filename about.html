@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Kartik Bhardwaj
+    </title>
+
+    <!-- Favicon -->
+   <link rel="shortcut icon" href="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/kb-logo.jpg?raw=true">
+
+<style>
+.preloader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 99999;
+}
+
+.cssload-container {
+    position: relative;
+}
+
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgb(102, 0, 0);
+    border-left-color: rgb(0, 0, 0);
+    border-radius: 974px;
+    -o-border-radius: 974px;
+    -ms-border-radius: 974px;
+    -webkit-border-radius: 974px;
+    -moz-border-radius: 974px;
+
+}
+
+.cssload-whirlpool {
+    margin: -24px 0 0 -24px;
+    height: 49px;
+    width: 49px;
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::before {
+    content: "";
+    margin: -22px 0 0 -22px;
+    height: 43px;
+    width: 43px;
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::after {
+    content: "";
+    margin: -28px 0 0 -28px;
+    height: 55px;
+    width: 55px;
+    animation: cssload-rotate 2300ms linear infinite;
+    -o-animation: cssload-rotate 2300ms linear infinite;
+    -ms-animation: cssload-rotate 2300ms linear infinite;
+    -webkit-animation: cssload-rotate 2300ms linear infinite;
+    -moz-animation: cssload-rotate 2300ms linear infinite;
+}
+
+@keyframes cssload-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes cssload-rotate {
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes cssload-rotate {
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+header {
+
+      background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://github.com/KartikBha123/Portfolio/blob/master/fabian-grohs-2l4ztyIYouk-unsplash.jpg?raw=true");
+      background-size:cover;
+      background-repeat:no-repeat;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      position:fixed;
+      overflow:auto;
+}
+
+
+
+.container{
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: transparent;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 5px;
+  margin-top:180px;
+  position:relative;
+}
+
+.card{
+  border-color: #991f00;
+  border-style: solid ;
+  border-width: 5%;
+  left:25% ;
+  right:35%;
+  height: 50%;
+  width:50%;
+
+}
+
+.nav-option{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.nav-option.active{
+  background-color: #4d0f00 ;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.nav-option:hover{
+  background-color: grey;
+  color:white;
+}
+
+.imgs {
+  position: absolute;
+  margin-top:10px;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+#wrapper nav {
+    transition: all 0.3s ease-in;
+    padding-left: 10px;
+    background-color:black;
+    position:fixed;
+    top:0;
+    z-index:1;
+}
+
+.container button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 2% 15%;
+  cursor: pointer;
+  font-size: 20px;
+  height: auto;
+  width: auto;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: #4d0f00;
+  transform: scale(1.1);
+  transition: transform 0.8s;
+  border-style: double;
+  border-color: black ;
+  border-width: 3%
+}
+
+.activator:hover{
+  transform: scale(1.1);
+  transition: transform 1s;
+  border-style: double;
+  border-color: black ;
+
+}
+
+.collapsible{
+border-width: 0px;
+border-style: hidden;
+
+}
+
+.collapsible-body{
+  color:white;
+  background-color: black;
+  border-style: hidden;
+  border-width: 0px;
+
+}
+
+ul li>a{
+  font-weight: 1000;
+  font-style: normal ;
+  color: Black;
+}
+
+  .wave-effect:hover{
+  background-color: grey;
+
+}
+
+
+.collapsible-header:hover , .collapsible-header:focus{
+  transform: scale(1.1);
+  transition: transform 1.5s;
+  background-color: #4d0f00;
+  color:white;
+  border-style: solid;
+  border-color: white;
+}
+.circle:hover{
+  transform: scale(1.2);
+  transition: transform .8s;
+}
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+
+$(window).load(function() {
+$('.cssload-whirlpool').fadeOut();
+$('.preloader').delay(300).fadeOut('fast');
+$('body').delay(300).css({'overflow':'visible'});
+})
+  </script>
+
+
+
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+
+
+  <body>
+
+    <!-- Preloader begin -->
+
+    <div class="preloader">
+      <div class="cssload-whirlpool"></div>
+    </div>
+
+     <!-- Preloader end -->
+
+
+    <div id="wrapper">
+     <header>
+    </header>
+         <div class="navbar-fixed">
+             <nav class="z-depth-0 nav-extended" style=" height: 66px;">
+                 <div class="container">
+                     <div class="nav-wrapper">
+                         <a href="index.html" style="padding-left:5%;" href="#" class="logo-left"  id="logo-image"><img class="imgs" src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/kb-logo.jpg?raw=true"></a>
+
+                         <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up right" id="sidenav-hamburger">
+                             <i class="fas fa-bars" style="font-size: 30px;"></i>
+                         </a>
+
+
+                         <ul class="right hide-on-small-only">
+                                <li><a href="index.html"  class="nav-option" style="right-margin: 8%;">HOME</a></li>
+                               <li><a href="about.html" class="nav-option active" style="right-margin: 8%;">ABOUT</a></li>
+                               <li><a href="Projects.html" class="nav-option" style="right-margin: 8%;">PROJECTS</a></li>
+                         </ul>
+
+
+                     </div>
+                 </div>
+             </nav>
+         </div>
+
+         <ul id="slide-out" class="sidenav" >
+
+              <li><div class="user-view" style="height: 130px" >
+                <div class="background" style="background-color: #262626;">
+
+
+                </div>
+                <a href="index.html"><img class="circle" src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/PhotoGrid_1566828901800.jpg?raw=true"></a>
+                <a href="#name"><span class="Black-text name" style="color: white; font-weight: 400;font-family: 'Lato'; font-size: 150%; ">KARTIK BHARDWAJ</span></a>
+
+              </div></li>
+
+                  <li><a href="index.html">HOME</a></li>
+                  <li><div class="divider"></div></li>
+
+                  <li> <a href="about.html" class="waves-effect" >ABOUT</a></li>
+                  <li><div class="divider"></div></li>
+
+                  <li><a href="projects.html" class="waves-effect" >PROJECTS</a></li>
+                  <li><div class="divider"></div></li>
+
+            </ul>
+
+
+
+<div class="container center-align">
+      <span><h4 class="center-align" style="color:white; font-family: 'Lexend Zetta', sans-serif; text-shadow: 2px 2px #b32400; align-items:center;  margin-top:50px; z-index:-1;"> <b>ABOUT  ME </b></h4> </span>
+                <div class="divider center-align">
+                    <span class="outer-line"></span>
+                </div>
+        <div class="card" style=" margin-top:5%;   z-index:0; ">
+                          <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="https://github.com/KartikBha123/Portfolio/blob/master/PhotoGrid_1564411916187.jpg?raw=true">
+                          </div>
+
+                          <div class="card-content center-align">
+                              <p style="left:80% ;  right:20%; font-family: 'Lexend Zetta', sans-serif;" >  Hey!! Want to know about me? Click on the picture above. </p>
+                                  <br>
+
+                              <a   href="https://github.com/KartikBha123/Portfolio/raw/master/Kartik's%20Resume%20(1).pdf" download>
+                                  <button class="button" ><i class="fa fa-download"></i>  Resume </button>
+                              </a>
+                          </div>
+
+                          <div class="card-reveal">
+                              <span class="card-title"> <p style="color: red; text-shadow: 1px 1px black; font-size:60%; font-family: 'Lato'; align-items: center;"> <b>Hello World !! </b></p><i class="material-icons right">close</i></span>
+                              <p class="center-align"> I'm Kartik Bhardwaj. I'm a undergraduate student pursuing Bachelors of Engineering in computer science.</p>
+                          </div>
+        </div>
+
+              <br>
+
+
+        <div>
+                            <ul class="collapsible">
+                            <li>
+                            <div class="collapsible-header"><i class="fa fa-user"></i>Personal Details</div>
+                            <div class="collapsible-body">
+                                  <table>
+                                        <tbody >
+                                          <tr>
+                                            <td>First Name  : </td>
+                                            <td>Kartik</td>
+
+                                          </tr>
+                                          <tr>
+                                            <td>Last Name  :</td>
+                                            <td>Bhardwaj</td>
+
+                                          </tr>
+                                          <tr>
+                                            <td>Date of Birth  :</td>
+                                            <td>22nd October 1998</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Address  :</td>
+                                            <td>T-30 Sector-11 Noida, UP</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Nationality  :</td>
+                                            <td>Indian</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Email  :</td>
+                                            <td>kartikbha123@gmail.com</td>
+                                          </tr>
+                                          <tr>
+                                            <td>Spoken Language  :</td>
+                                            <td>Hindi and English</td>
+                                          </tr>
+
+                                        </tbody>
+                                      </table>
+                            </div>
+
+
+                            </li>
+                            <br>
+                            <li>
+                            <div class="collapsible-header"><i class="fa fa-graduation-cap"></i>Education</div>
+                            <div class="collapsible-body" >
+                              <div class="resume-card-body-container second-font">
+													<!-- Single Education Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Bachelor Degree - B.Tech - </span>Dr. A P J Abdul Kalam Technical University, Lucknow</h6>
+														<span class="date"><i class="fa fa-calendar-o">   2016 - 2020</i></span>
+														<p style="font-weight:50;">Pursuing my Btech. - Computer Science, degree from Ganeshi Lal Bajaj Institute of Technology & Management, Greater Noida, UP.</p>
+                                                    </div>
+													<!-- Single Education Ends -->
+                                                  <hr>
+													<!-- Single Education Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Higher Secondary (12th) - </span>Central Board of Secondary Education</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> April 2015 - March 2016</span>
+														<p style="font-weight:50;">Assisi Convent School, Noida, was great in the knowledge it delivers. The name of the teachers are often get mentioned by me while mentioning people behind my achievements. The school provided a supportive and genuine environment for me to explore my knowledge and conquer my fears.</p>
+                                                    </div>
+													<!-- Single Education Ends -->
+                                                  <hr>
+													<!-- Single Education Starts -->
+                                                    <div class="resume-content">
+														<h6 class="uppercase"><span>Senior Secondary (10th) - </span>Central Board of Secondary Education</h6>
+														<span class="date"><i class="fa fa-calendar-o"></i> April 2013 - March 2014</span>
+														<p style=" font-weight: 50;">The little things i learned in Assisi Convent School,Noida are the capital for my lifelong journey, the teachers were motivating and perfect on the subjects they were dealing.</p>
+                                                    </div>
+													<!-- Single Education Ends -->
+                                                </div>
+                            </div>
+                            </li>
+                            <br>
+                            <li>
+                            <div class="collapsible-header"><i class="fa fa-star"></i>Skills</div>
+                            <div class="collapsible-body" style=" font-family: 'Lexend Zetta', sans-serif;"><span class="left">1. JAVA CORE</span> <br>
+                                                          <span class="left">2. PYTHON</span> <br>
+                                                          <span class="left">3. C</span> <br>
+                                                          <span class="left">4. HTML</span> <br>
+                                                          <span class="left">5. CSS</span> <br>
+                                                          <span class="left">6. JAVA SCRIPT</span>
+
+                                                      </div>
+                            </li>
+
+                            </ul>
+        </div>
+
+</div>
+<br>
+<br>
+
+
+<script type="text/javascript">
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+        });
+
+        $(document).ready(function(){
+      $('.sidenav').sidenav();
+    });
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Font Awesome Icons -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+       crossorigin="anonymous">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+       <!-- Google Fonts -->
+         <link href="https://fonts.googleapis.com/css?family=Lora|Oswald|Lato:400,300|Montserrat:700,400" rel="stylesheet">
+
+    <!--JavaScript at end of body for optimized loading-->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
