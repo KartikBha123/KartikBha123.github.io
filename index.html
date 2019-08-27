@@ -219,11 +219,40 @@ header {
 });
 
 
+
+
   $(window).load(function() {
   $('.cssload-whirlpool').fadeOut();
   $('.preloader').delay(300).fadeOut('slow');
   $('body').delay(300).css({'overflow':'visible'});
   })
+
+  var i = 0;
+  var j=0;
+  var txt = 'I am a Computer Science Engineering Student.';
+  var text='I am a Web Designer.';
+  var speed = 150;
+
+  document.addEventListener("DOMContentLoaded", function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+    else  {
+      document.getElementById("demo").innerHTML= "";
+      i=0;
+      typeWriter();
+
+  }
+
+
+
+
+  });
+
+
+
 
   </script>
 
@@ -312,7 +341,9 @@ header {
             <div class="col s12 center-align " style="margin-top:18%;">
 
               <h1 style="color:white; font-family: 'Hepta Slab', serif;  text-shadow: 2px 2px #b32400;"><b>KARTIK BHARDWAJ</b></h1>
-                <p style=" color :grey ; font-family: 'Slabo 27px', serif; font-size:27px; text-shadow: 1px 1px white;">I am a Computer Science engineering student.</p>
+                <p id="demo" style=" color :white ; font-family:'serif';  font-size:20px;  z-idnex : 9999;"></p>
+              <!--  <p id="demo-1" style=" color :grey ; font-family: 'Slabo 27px', serif; font-size:27px; text-shadow: 1px 1px white; z-idnex : 9999;"></p> -->
+
               </div>
 
 
