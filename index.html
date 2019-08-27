@@ -172,7 +172,7 @@ header {
 }
 
 .btn-floating.btn-med.pulse.tooltipped:hover{
-  background-color: #4d0f00;
+  background-color: grey;
 }
 
 .nav-option:hover{
@@ -214,10 +214,9 @@ header {
     });
 
 
-    document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems);
-  });
+    $(document).ready(function(){
+  $('.sidenav').sidenav();
+});
 
 
   $(window).load(function() {
@@ -284,17 +283,17 @@ header {
 
          <ul id="slide-out" class="sidenav" >
 
-            <li><div class="user-view" style="height: 130px" >
+              <li><div class="user-view" style="height: 130px" >
                 <div class="background" style="background-color: #262626;">
 
 
                 </div>
-                <a href="index.html"><img class="circle" src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/PhotoGrid_1566828901800.jpg?raw=true"></a>
-              <a href="#name"><span class="Black-text name" style="color: white; font-weight: 400;font-family: 'Lato'; font-size: 150%; ">KARTIK BHARDWAJ</span></a>
+                <a href="index.html"><img class="circle" style="margin-top:3px; " src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/PhotoGrid_1566828901800.jpg?raw=true"></a>
+                <a href="#name"><span class="Black-text name" style="color: white; font-weight: 400;font-family: 'Lato'; margin-top:80px;">KARTIK BHARDWAJ</span></a>
 
               </div></li>
 
-                  <li><a href="index.html"  >HOME</a></li>
+                  <li><a href="index.html">HOME</a></li>
                   <li><div class="divider"></div></li>
 
                   <li> <a href="about.html" class="waves-effect" >ABOUT</a></li>
@@ -304,7 +303,6 @@ header {
                   <li><div class="divider"></div></li>
 
             </ul>
-
 
 
 
