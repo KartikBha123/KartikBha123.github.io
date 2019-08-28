@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Kartik Bhardwaj
+    </title>
+
+        <!-- Favicon -->
+       <link rel="shortcut icon" href="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/kb-logo.jpg?raw=true">
+
+
+<style>
+
+
+html{
+  overflow:auto;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 99999;
+}
+
+.cssload-container {
+    position: relative;
+}
+
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid rgb(102, 0, 0);
+    border-left-color: rgb(0, 0, 0);
+    border-radius: 974px;
+    -o-border-radius: 974px;
+    -ms-border-radius: 974px;
+    -webkit-border-radius: 974px;
+    -moz-border-radius: 974px;
+
+}
+
+.cssload-whirlpool {
+    margin: -24px 0 0 -24px;
+    height: 49px;
+    width: 49px;
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::before {
+    content: "";
+    margin: -22px 0 0 -22px;
+    height: 43px;
+    width: 43px;
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::after {
+    content: "";
+    margin: -28px 0 0 -28px;
+    height: 55px;
+    width: 55px;
+    animation: cssload-rotate 2300ms linear infinite;
+    -o-animation: cssload-rotate 2300ms linear infinite;
+    -ms-animation: cssload-rotate 2300ms linear infinite;
+    -webkit-animation: cssload-rotate 2300ms linear infinite;
+    -moz-animation: cssload-rotate 2300ms linear infinite;
+}
+
+@keyframes cssload-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes cssload-rotate {
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes cssload-rotate {
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+header {
+       background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://github.com/KartikBha123/Portfolio/blob/master/fabian-grohs-2l4ztyIYouk-unsplash.jpg?raw=true");
+      background-size:cover;
+      background-position:;
+      background-repeat:no-repeat;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      position:fixed;
+      cursor: pointer;
+}
+
+.container {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: transparent;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 5px;
+  top:0;
+  position:relative;
+}
+
+
+#wrapper nav {
+    transition: all 0.3s ease-out;
+    padding-left: 10px;
+    overflow: hidden;
+    will-change: transform;
+    z-index: 1;
+    background-color:black;
+    top:0;
+}
+
+
+.nav-option{
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.nav-option.active{
+  background-color: #4d0f00 ;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+
+
+.btn-floating.btn-med.pulse.tooltipped{
+  margin-right:10px;
+  margin-left:10px;
+  margin-bottom:10px;
+  height: 42px;
+  width: 52px;
+  align:center;
+  background-color: #4d0f00;
+}
+
+.btn-floating.btn-med.pulse.tooltipped:hover{
+  background-color: grey;
+}
+
+.nav-option:hover{
+  background-color: grey;
+}
+
+.wave-effect{
+  cursor: pointer;
+}
+
+ ul li>a{
+   font-weight: 1000;
+   font-style: normal ;
+   color: Black;
+ }
+
+ .circle:hover{
+   transform: scale(1.2);
+   transition: transform .8s;
+ }
+
+ img {
+   position: absolute;
+   margin-top:10px;
+   width: 50px;
+   height: 50px;
+ }
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.tooltipped');
+      var instances = M.Tooltip.init(elems);
+    });
+
+
+    $(document).ready(function(){
+  $('.sidenav').sidenav();
+});
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="jquery.animatedheadline.css">
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+    <!-- Preloader begin -->
+
+
+
+   <!-- Preloader end -->
+
+
+
+         <ul id="slide-out" class="sidenav" >
+
+              <li><div class="user-view" style="height: 130px" >
+                <div class="background" style="background-color: #262626;">
+
+
+                </div>
+                <a href="index.html"><img class="circle" style="margin-top:3px; " src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/PhotoGrid_1566828901800.jpg?raw=true"></a>
+                <a href="#name"><span class="Black-text name" style="color: white; font-weight: 400;font-family: 'Lato'; margin-top:80px;">KARTIK BHARDWAJ</span></a>
+
+              </div></li>
+
+                  <li><a href="index.html">HOME</a></li>
+                  <li><div class="divider"></div></li>
+
+                  <li> <a href="about.html" class="waves-effect" >ABOUT</a></li>
+                  <li><div class="divider"></div></li>
+
+                  <li><a href="projects.html" class="waves-effect" >PROJECTS</a></li>
+                  <li><div class="divider"></div></li>
+
+            </ul>
+
+
+
+ <div class="container">
+
+    <div class="row">
+            <div class="col s12 center-align " style="margin-top:18%;">
+
+              <h1 style="color:white; font-family: 'Hepta Slab', serif;  text-shadow: 2px 2px #b32400;"><b>KARTIK BHARDWAJ</b></h1>
+                <p id="demo" style=" color :black ;"></p>
+              </div>
+
+
+              <div class="col s12 center-align" style="padding:40px 40px;">
+
+                  <a href="https://github.com/KartikBha123"  class="btn-floating  btn-med pulse  tooltipped" data-position="bottom" data-tooltip="Github" ><i class="fab fa-github"></i></a>
+
+                  <a href="https://www.linkedin.com/in/kartik-bhardwaj/" class="btn-floating  btn-med pulse tooltipped" data-position="bottom" data-tooltip="Linkedin" > <i class="fab fa-linkedin-in"></i></a>
+
+                  <a href="https://www.facebook.com/kartik.bhardwaj.315" class="btn-floating  btn-med pulse tooltipped" data-position="bottom" data-tooltip="Facebook"><i class="fab fa-facebook"></i></a>
+
+                  <a href="https://www.instagram.com/kartikbhardwaj10/" class="btn-floating  btn-med pulse tooltipped" data-position="bottom" data-tooltip="Instagram" ><i class="fab fa-instagram"></i></a>
+
+                  <a href="mailto:kartikbha123@gmail.com" target="_blank" class=" btn-floating  btn-med pulse tooltipped" data-position="bottom" data-tooltip="mail" ><i class="fas fa-envelope"></i></a>
+
+                      </div>
+               </div>
+
+      </div>
+
+
+
+
+    <!-- Font Awesome Icons -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+       crossorigin="anonymous">
+
+       <!-- Google Fonts -->
+         <link href="https://fonts.googleapis.com/css?family=Lora|Oswald|Lato:400,300|Montserrat:700,400" rel="stylesheet">
+
+
+    <!--JavaScript at end of body for optimized loading-->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

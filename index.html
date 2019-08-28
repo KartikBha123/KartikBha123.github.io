@@ -228,24 +228,53 @@ header {
   })
 
   var i = 0;
-  var j=0;
+  var j=7;
+  k=7;
   var txt = 'I am a Computer Science Engineering Student.';
   var text='I am a Web Designer.';
-  var speed = 150;
+  var text1='I am a Life Long Learner.';
+
+  var speed = 250;
 
   document.addEventListener("DOMContentLoaded", function typeWriter() {
+    f1();
+    function f1() {
     if (i < txt.length) {
       document.getElementById("demo").innerHTML += txt.charAt(i);
       i++;
-      setTimeout(typeWriter, speed);
+      setTimeout(f1, speed);
     }
-    else  {
-      document.getElementById("demo").innerHTML= "";
-      i=0;
-      typeWriter();
 
+    else if (i >= txt.length && j < text.length) {
+      if(j==7) {
+        document.getElementById("demo").innerHTML= "I am a ";
+      }
+
+      document.getElementById("demo").innerHTML+= text.charAt(j);
+      j++;
+        setTimeout(f1, speed);
   }
 
+  else if (i >= txt.length && j >= text.length && k < text1.length) {
+    if(k==7) {
+      document.getElementById("demo").innerHTML= "I am a ";
+    }
+
+    document.getElementById("demo").innerHTML+= text1.charAt(k);
+    k++;
+    setTimeout(f1, speed);
+}
+
+  else {
+      document.getElementById("demo").innerHTML= "";
+      i=0;
+      j=7;
+      k=7;
+      f1();
+  }
+
+
+}
 
 
 
@@ -260,6 +289,8 @@ header {
 
 
     <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -341,7 +372,7 @@ header {
             <div class="col s12 center-align " style="margin-top:18%;">
 
               <h1 style="color:white; font-family: 'Hepta Slab', serif;  text-shadow: 2px 2px #b32400;"><b>KARTIK BHARDWAJ</b></h1>
-                <p id="demo" style=" color :white ; font-family:'serif';  font-size:20px;  z-idnex : 9999;"></p>
+                <p id="demo" style=" color :white ; font-family: 'Permanent Marker', cursive ; font-weight: 10; font-size:180%;  z-idnex : 9999;"></p>
               <!--  <p id="demo-1" style=" color :grey ; font-family: 'Slabo 27px', serif; font-size:27px; text-shadow: 1px 1px white; z-idnex : 9999;"></p> -->
 
               </div>
