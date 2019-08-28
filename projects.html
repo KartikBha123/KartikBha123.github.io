@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Kartik Bhardwaj
+    </title>
+
+    <!-- Favicon -->
+   <link rel="shortcut icon" href="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/kb-logo.jpg?raw=true">
+
+<style>
+.preloader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 99999;
+}
+
+.cssload-container {
+    position: relative;
+}
+
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgb(102, 0, 0);
+    border-left-color: rgb(0, 0, 0);
+    border-radius: 974px;
+    -o-border-radius: 974px;
+    -ms-border-radius: 974px;
+    -webkit-border-radius: 974px;
+    -moz-border-radius: 974px;
+
+}
+
+.cssload-whirlpool {
+    margin: -24px 0 0 -24px;
+    height: 49px;
+    width: 49px;
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::before {
+    content: "";
+    margin: -22px 0 0 -22px;
+    height: 43px;
+    width: 43px;
+    animation: cssload-rotate 1150ms linear infinite;
+    -o-animation: cssload-rotate 1150ms linear infinite;
+    -ms-animation: cssload-rotate 1150ms linear infinite;
+    -webkit-animation: cssload-rotate 1150ms linear infinite;
+    -moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::after {
+    content: "";
+    margin: -28px 0 0 -28px;
+    height: 55px;
+    width: 55px;
+    animation: cssload-rotate 2300ms linear infinite;
+    -o-animation: cssload-rotate 2300ms linear infinite;
+    -ms-animation: cssload-rotate 2300ms linear infinite;
+    -webkit-animation: cssload-rotate 2300ms linear infinite;
+    -moz-animation: cssload-rotate 2300ms linear infinite;
+}
+
+@keyframes cssload-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes cssload-rotate {
+    100% {
+        -o-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes cssload-rotate {
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cssload-rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes cssload-rotate {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+header {
+
+      background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("https://github.com/KartikBha123/Portfolio/blob/master/fabian-grohs-2l4ztyIYouk-unsplash.jpg?raw=true");
+      background-size:cover;
+      background-repeat:no-repeat;
+      width:100%;
+      height:100%;
+      top:0;
+      left:0;
+      position:fixed;
+      overflow:auto;
+}
+
+
+
+.container{
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: transparent;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 5px;
+  margin-top:180px;
+  position:relative;
+}
+
+.card{
+  border-color: #991f00;
+  border-style: solid ;
+  border-width: 5%;
+  left:25% ;
+  right:35%;
+  height: 50%;
+  width:50%;
+
+}
+
+.nav-option{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.nav-option.active{
+  background-color: #4d0f00 ;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.nav-option:hover{
+  background-color: grey;
+  color:white;
+}
+
+.imgs {
+  position: absolute;
+  margin-top:10px;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+#wrapper nav {
+    transition: all 0.3s ease-in;
+    padding-left: 10px;
+    background-color:black;
+    position:fixed;
+    top:0;
+    z-index:1;
+}
+
+.container button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 2% 15%;
+  cursor: pointer;
+  font-size: 20px;
+  height: auto;
+  width: auto;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: #4d0f00;
+  transform: scale(1.1);
+  transition: transform 0.8s;
+  border-style: double;
+  border-color: black ;
+  border-width: 3%
+}
+
+.activator:hover{
+  transform: scale(1.1);
+  transition: transform 1s;
+  border-style: double;
+  border-color: black ;
+
+}
+
+.collapsible{
+border-width: 0px;
+border-style: hidden;
+
+}
+
+.collapsible-body{
+  color:white;
+  background-color: black;
+  border-style: hidden;
+  border-width: 0px;
+
+}
+
+ul li>a{
+  font-weight: 1000;
+  font-style: normal ;
+  color: Black;
+}
+
+  .wave-effect:hover{
+  background-color: grey;
+
+}
+
+
+.circle:hover{
+  transform: scale(1.2);
+  transition: transform .8s;
+}
+
+#slide-out {
+background-color:  #404040;
+}
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+
+      $(document).ready(function(){
+      $('.sidenav').sidenav();
+      });
+
+      $(window).load(function() {
+      $('.cssload-whirlpool').fadeOut();
+      $('.preloader').delay(300).fadeOut('fast');
+      $('body').delay(300).css({'overflow':'visible'});
+      })
+  </script>
+
+
+
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+
+
+  <body>
+
+    <!-- Preloader begin -->
+
+    <div class="preloader">
+      <div class="cssload-whirlpool"></div>
+    </div>
+
+     <!-- Preloader end -->
+
+
+    <div id="wrapper">
+     <header>
+    </header>
+         <div class="navbar-fixed">
+             <nav class="z-depth-0 nav-extended" style=" height: 66px;">
+                 <div class="container">
+                     <div class="nav-wrapper">
+                         <a href="index.html" style="padding-left:5%;" href="#" class="logo-left"  id="logo-image"><img class="imgs" src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/kb-logo.jpg?raw=true"></a>
+
+                         <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up right" id="sidenav-hamburger">
+                             <i class="fas fa-bars" style="font-size: 30px;"></i>
+                         </a>
+
+
+                         <ul class="right hide-on-small-only">
+                                <li><a href="index.html"  class="nav-option" style="right-margin: 8%;">HOME</a></li>
+                               <li><a href="about.html" class="nav-option active" style="right-margin: 8%;">ABOUT</a></li>
+                               <li><a href="Projects.html" class="nav-option" style="right-margin: 8%;">PROJECTS</a></li>
+                         </ul>
+
+
+                     </div>
+                 </div>
+             </nav>
+         </div>
+
+         <ul id="slide-out" class="sidenav" >
+
+              <li><div class="user-view" style="height: 130px" >
+                <div class="background" style="background-color: #262626;">
+
+
+                </div>
+                <a href="index.html"><img class="circle" src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/PhotoGrid_1566828901800.jpg?raw=true"></a>
+                <a href="#name"><span class="Black-text name" style="color: white; font-weight: 800;font-family: 'Lato'; "><b>KARTIK BHARDWAJ</b></span></a>
+
+              </div></li>
+
+                  <li><a href="index.html"  style="color:white;"><b>HOME</a></li>
+                  <li><div class="divider"></div></li>
+
+                  <li> <a href="about.html" class="waves-effect" style="color:white;">ABOUT</a></li>
+                  <li><div class="divider"></div></li>
+
+                  <li><a href="projects.html" class="waves-effect" style="color:white;" >PROJECTS </a></li>
+                  <li><div class="divider"></div></li>
+
+            </ul>
+          </b>
+
+
+                <div class="container center-align">
+                      <span><h4 class="center-align" style="color:white; font-family: 'Lexend Zetta', sans-serif; text-shadow: 2px 2px #b32400; align-items:center;  margin-top:50px; z-index:-1;"> <b>My Projects</b></h4> </span>
+                      <div class="divider center-align">
+                      <span class="outer-line"></span>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Font Awesome Icons -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+       crossorigin="anonymous">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+       <!-- Google Fonts -->
+         <link href="https://fonts.googleapis.com/css?family=Lora|Oswald|Lato:400,300|Montserrat:700,400" rel="stylesheet">
+
+    <!--JavaScript at end of body for optimized loading-->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
