@@ -158,13 +158,17 @@ header {
   color:white;
 }
 
-.imgs {
+img {
   position: absolute;
   margin-top:10px;
   width: 50px;
   height: 50px;
 }
 
+.imgs{
+  width: auto;
+  height: auto;
+}
 
 
 #wrapper nav {
@@ -245,8 +249,9 @@ ul li>a{
 }
 
 #slide-out {
-background-color:  #404040;
-}
+  background-color:  #1a1a1a;
+  color:white;
+  width:100%;}
 
 
 </style>
@@ -289,57 +294,55 @@ $('body').delay(300).css({'overflow':'visible'});
 
      <!-- Preloader end -->
 
-
-    <div id="wrapper">
-     <header>
-    </header>
-         <div class="navbar-fixed">
-             <nav class="z-depth-0 nav-extended" style=" height: 66px;">
-                 <div class="container">
-                     <div class="nav-wrapper">
-                         <a href="index.html" style="padding-left:5%;" href="#" class="logo-left"  id="logo-image"><img class="imgs" src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/kb-logo.jpg?raw=true"></a>
-
-                         <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up right" id="sidenav-hamburger">
-                             <i class="fas fa-bars" style="font-size: 30px;"></i>
-                         </a>
+     <div id="wrapper">
+      <header>
+      </header>
+          <div class="navbar-fixed">
+              <nav class="z-depth-0 nav-extended" style=" height: 66px;">
+                  <div class ="container">
+                      <div class="nav-wrapper">
+                          <a href="index.html" style="padding-left:5%;" href="#" class="logo-left"  id="logo-image"><img src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/kb-logo.jpg?raw=true"></a>
 
 
-                         <ul class="right hide-on-small-only">
-                                <li><a href="index.html"  class="nav-option" style="right-margin: 8%;">HOME</a></li>
-                               <li><a href="about.html" class="nav-option active" style="right-margin: 8%;">ABOUT</a></li>
-                               <li><a href="projects.html" class="nav-option" style="right-margin: 8%;">PROJECTS</a></li>
-                         </ul>
+                          <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up right" id="sidenav-hamburger">
+                              <i class="fas fa-bars" style="font-size: 30px;"></i>
+                          </a>
 
 
-                     </div>
-                 </div>
-             </nav>
-         </div>
 
-         <ul id="slide-out" class="sidenav" >
-
-              <li><div class="user-view" style="height: 130px" >
-                <div class="background" style="background-color: #262626;">
+                          <ul class="right hide-on-small-only">
+                                <li><a href="index.html"  class="nav-option active" style="right-margin: 8%;">HOME</a></li>
+                                <li><a href="about.html" class="nav-option" style="right-margin: 8%;">ABOUT</a></li>
+                                <li><a href="projects.html" class="nav-option" style="right-margin: 8%;">PROJECTS</a></li>
+                          </ul>
 
 
-                </div>
-                <a href="index.html"><img class="circle" src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/PhotoGrid_1566828901800.jpg?raw=true"></a>
-                <a href="#name"><span class="Black-text name" style="color: white; font-weight: 800;font-family: 'Lato'; "><b>KARTIK BHARDWAJ</b></span></a>
+                      </div>
+                  </div>
+              </nav>
+          </div>
 
-              </div></li>
 
-                  <li><a href="index.html"  style="color:white;"><b>HOME</a></li>
-                  <li><div class="divider"></div></li>
+          <ul id="slide-out" class="sidenav" >
+               <li><div class="user-view" style="height: 130px" >
+                       <div class="background" style="background-color: #000000;"></div>
 
-                  <li> <a href="about.html" class="waves-effect" style="color:white;">ABOUT</a></li>
-                  <li><div class="divider"></div></li>
+                 <a href="index.html"><img class="circle" style="margin-top:3px; " src="https://github.com/KartikBha123/KartikBha123.github.io/blob/master/PhotoGrid_1566828901800.jpg?raw=true"></a>
+                 <a class="sidenav-close" href="#!"><i style="color: black; margin-left: 90%; font-size: 34px !important; color:white; " class="fas fa-times"></i></a>
+                 <a href="#name"><span class="Black-text name" style="color: white; font-weight: 800;font-family: 'Lato'; margin-top:32px;"><b>KARTIK BHARDWAJ</b></span></a>
 
-                  <li><a href="projects.html" class="waves-effect" style="color:white;" >PROJECTS </a></li>
-                  <li><div class="divider"></div></li>
+               </div></li>
+                   <b>
+                   <li><a href="index.html" style="color:white;">HOME</a></li>
+                   <li><div class="divider"></div></li>
 
-            </ul>
-          </b>
+                   <li> <a href="about.html" class="waves-effect" style="color:white;">ABOUT</a></li>
+                   <li><div class="divider"></div></li>
 
+                   <li><a href="projects.html" class="waves-effect" style="color:white;">PROJECTS</a></li>
+                   <li><div class="divider"></div></li>
+                 </b>
+             </ul>
 
 <div class="container center-align">
       <span><h4 class="center-align" style="color:white; font-family: 'Lexend Zetta', sans-serif; text-shadow: 2px 2px #b32400; align-items:center;  margin-top:50px; z-index:-1;"> <b>ABOUT  ME </b></h4> </span>
@@ -350,7 +353,7 @@ $('body').delay(300).css({'overflow':'visible'});
 
         <div class="card" style=" margin-top:5%;   z-index:0; border-style: none;">
                           <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="https://github.com/KartikBha123/Portfolio/blob/master/PhotoGrid_1564411916187.jpg?raw=true">
+                            <img class="activator" style=" height:250%; width:103%;" src="https://github.com/KartikBha123/Portfolio/blob/master/PhotoGrid_1564411916187.jpg?raw=true">
                           </div>
 
                           <div class="card-content center-align">
